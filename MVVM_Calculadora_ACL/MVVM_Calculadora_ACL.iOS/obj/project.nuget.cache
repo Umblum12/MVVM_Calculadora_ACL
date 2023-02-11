@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pkv8ub9z6KrRaFNlFEGknZjss2Gf8gtj3JJox4qoe35BpqGlHvWdti4HYKcJU44oovCBCyMLdvOe5jQLkO+iQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abela\\source\\repos\\MVVM_Calculadora_ACL\\MVVM_Calculadora_ACL\\MVVM_Calculadora_ACL.iOS\\MVVM_Calculadora_ACL.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abela\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\abela\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\abela\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM_Calculadora_ACL.Vista.Calculadora" 
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Abelardo Cruz Leos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid Margin="20,50,20,50">
+                <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Text="Calculadora" FontSize="Large" FontFamily="Arial" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Label>
+                <Entry Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Keyboard="Numeric" Text="{Binding Pantalla}" IsReadOnly="True" ></Entry>
+                <Button Grid.Row="2" Grid.Column="0" Text="AC" TextColor="White" BackgroundColor="Orange" Command="{Binding Btn_BorrarTodocommand}" ></Button>
+                <Button Grid.Row="2" Grid.Column="1"  Text="←" TextColor="White" BackgroundColor="red" Command="{Binding Btn_Borrarunoaunocommand}"  ></Button>
+                <Button Grid.Row="2" Grid.Column="2" Text="%" TextColor="White" BackgroundColor="Brown" Command="{Binding Btn_Porsentajecommand}" ></Button>
+                <Button Grid.Row="2" Grid.Column="3" Text="+" Command="{Binding Btn_Sumacommand}" TextColor="White" BackgroundColor="Brown" ></Button>
+                <Button Grid.Row="3" Grid.Column="0"  Text="7" Command="{Binding Btn_NumSitetecommand}" ></Button>
+                <Button Grid.Row="3" Grid.Column="1"  Text="8" Command="{Binding Btn_NumOchocommand}" ></Button>
+                <Button Grid.Row="3" Grid.Column="2"  Text="9" Command="{Binding Btn_NumNuevecommand}" ></Button>
+                <Button Grid.Row="3" Grid.Column="3"  Text="-" Command="{Binding Btn_Restacommand}" TextColor="White" BackgroundColor="Brown" ></Button>
+                <Button Grid.Row="4" Grid.Column="0"  Text="4" Command="{Binding Btn_NumCuatrocommand}" ></Button>
+                <Button Grid.Row="4" Grid.Column="1" Text="5" Command="{Binding Btn_NumCincocommand}" ></Button>
+                <Button Grid.Row="4" Grid.Column="2" Text="6" Command="{Binding Btn_NumSeiscommand}" ></Button>
+                <Button Grid.Row="4" Grid.Column="3" Text="X" Command="{Binding Btn_Multiplicacioncommand}" TextColor="White" BackgroundColor="Brown" ></Button>
+                <Button Grid.Row="5" Grid.Column="0" Text="1" Command="{Binding Btn_NumUnocommand}" ></Button>
+                <Button Grid.Row="5" Grid.Column="1" Text="2" Command="{Binding Btn_NumDoscommand}" ></Button>
+                <Button Grid.Row="5" Grid.Column="2" Text="3" Command="{Binding Btn_NumTrescommand}" ></Button>
+                <Button Grid.Row="5" Grid.Column="3" Text="÷" Command="{Binding Btn_Divicioncommand}" TextColor="White" BackgroundColor="Brown" ></Button>
+                <Button Grid.Row="6" Grid.Column="0" Text="0" Command="{Binding Btn_NumCerocommand}" ></Button>
+                <Button Grid.Row="6" Grid.Column="1" Text="," Command="{Binding Btn_Comacommand}" ></Button>
+                <Button Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Text="="  Command="{Binding Btn_Igualcommand}" TextColor="White" BackgroundColor="blue" ></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
